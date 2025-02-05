@@ -1,0 +1,48 @@
+{
+    "character_id": 1,
+    "name": "Walter White",
+    "birthday": "09-07-1958",
+    "occupations": [
+        "Co-Founder of Gray Matter Technologies",
+        "Chemistry Teacher at J. P. Wynne High School",
+        "Car Wash Attendant at A1A Car Wash",
+        "Crystal Meth Manufacturer",
+        "Meth Kingpin",
+        "Owner of A1A Car Wash"
+    ],
+    "images": [
+        "https://images.amcnetworks.com/amc.com/wp-content/uploads/2015/04/cast_bb_700x1000_walter-white-lg.jpg",
+        "https://static.wikia.nocookie.net/breakingbad/images/e/e7/BB-S5B-Walt-590.jpg/revision/latest?cb=20130928055404",
+        "https://static.wikia.nocookie.net/breakingbad/images/4/4a/Season_2_promo_pic_6.jpg/revision/latest?cb=20120617212256",
+        "https://static.wikia.nocookie.net/breakingbad/images/b/b4/Walter_2008.png/revision/latest?cb=20200704164147",
+        "https://static.wikia.nocookie.net/breakingbad/images/e/ea/Season_4_-_Heisenberg.jpg/revision/latest?cb=20110817002354",
+        "https://static.wikia.nocookie.net/breakingbad/images/d/d1/Season_4_-_Walt.jpg/revision/latest?cb=20220805224819",
+        "https://static.wikia.nocookie.net/breakingbad/images/5/57/Walter_White_5A_Promotional_Image.jpg/revision/latest?cb=20221207180019",
+        "https://static.wikia.nocookie.net/breakingbad/images/c/c0/WaltS5.jpg/revision/latest?cb=20120620012205"
+    ],
+    "full_name": "Walter Hartwell White Sr.",
+    "aliases": [
+        "Walt",
+        "Heisenberg",
+        "Mr. White",
+        "Mr. W",
+        "Walt Jackson",
+        "Mr. Mayhew",
+        "The Maestro",
+        "Grandpa Anus",
+        "Nick the Greek",
+        "Mr. Lambert"
+    ],
+    "status": "Dead",
+    "appearance": {
+        "breaking_bad": [1,2,3,4,5],
+        "better_call_saul": [6],
+        "el_camino": [1]
+    },
+    "portrayed_by": "Bryan Cranston",
+    "productions": [
+        "Breaking Bad",
+        "Better Call Saul",
+        "El Camino"
+    ]
+}
