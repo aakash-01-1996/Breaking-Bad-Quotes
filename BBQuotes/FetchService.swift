@@ -20,11 +20,17 @@ struct FetchService {
         let fetchURL = quoteURL.appending(queryItems: [URLQueryItem(name: "production", value: show)])
     
         // Todo: Fetch data
+        let (data, response) = try await URLSession.shared.data(from: fetchURL)
         
         // Todo: Handle response
+        guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
+            throw FetchError.badResponse
+        }
         
         // Todo: Decode data
+        let quote = try JSONDecoder().decode(Quote.self, from: data)
         
         // Todo: Return Quote
+        return quote
     }
 }
