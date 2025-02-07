@@ -18,7 +18,7 @@ class ViewModel {
         
     }
     
-    private(set) var staus: FetchStatus = .notStarted
+    private(set) var status: FetchStatus = .notStarted
     
     private let fetcher = FetchService()
     
@@ -34,5 +34,21 @@ class ViewModel {
         
         let characterData = try! Data(contentsOf: Bundle.main.url(forResource: "samplecharacter", withExtension: "json")!)
         character = try! decoder.decode(Char.self, from:characterData)
+    }
+    
+    func getData(forShow: String) async {
+        status = .fetching
+        
+        do {
+            quote = try await fetcher.fetchQuote(from: forShow)
+            
+            character = try await fetcher.fetchCharcter(quote.character)
+            
+            character.death = try await fetcher.fetchDeath(for: character.name)
+            
+            status = .success
+        } catch {
+            status = .failed(error: error)
+        }
     }
 }
