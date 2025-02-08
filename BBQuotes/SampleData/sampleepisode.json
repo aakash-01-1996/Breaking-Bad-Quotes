@@ -1,0 +1,30 @@
+{
+    "episode_id": 1,
+    "production": "Breaking Bad",
+    "episode": 101,
+    "title": "Pilot",
+    "image": "https://static.wikia.nocookie.net/breakingbad/images/b/b1/BB_101_S.jpg/revision/latest?cb=20170418193804",
+    "synopsis": "Unassuming high school chemistry teacher Walter White discovers he has lung cancer. Desperate to secure his family's financial future and finally free from the fear that had always inhibited him, Walt teams up with a former student to turn a used RV into a mobile drug lab.",
+    "written_by": "Vince Gilligan",
+    "directed_by": "Vince Gilligan",
+    "air_date": "01-20-2008",
+    "characters": [
+        "Walter White",
+        "Jesse Pinkman",
+        "Skyler White",
+        "Walter Jr.",
+        "Ben",
+        "Chad",
+        "Chad's Girlfriend",
+        "Bogdan",
+        "Carmen",
+        "Marie Schrader",
+        "Hank Schrader",
+        "Steve Gomez",
+        "E.M.T.",
+        "Dr. Belknap",
+        "Emilio",
+        "Jock",
+        "Krazy-8"
+    ]
+}
