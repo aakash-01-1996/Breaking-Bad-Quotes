@@ -61,7 +61,7 @@ struct QuoteView: View {
                             
                         case .failed(let error):
                             Text(error.localizedDescription)
-                        }                        
+                        }
                         Spacer()
                     }
                     
@@ -74,9 +74,9 @@ struct QuoteView: View {
                             .font(.title2)
                             .foregroundStyle(.white)
                             .padding()
-                            .background(.breakingBadGreen)
+                            .background(Color("\(show.replacingOccurrences(of: " ", with: ""))Button"))
                             .clipShape(.rect(cornerRadius: 9))
-                            .shadow(color: .breakingBadYellow ,radius:2)
+                            .shadow(color: Color("\(show.replacingOccurrences(of: " ", with: ""))Shadow") ,radius:2)
                     }
                     Spacer(minLength: 95)
                 }
@@ -91,6 +91,6 @@ struct QuoteView: View {
 
 
 #Preview {
-    QuoteView(show: "Breaking Bad")
+    QuoteView(show: "Better Call Saul")
         .preferredColorScheme(.dark)
 }
