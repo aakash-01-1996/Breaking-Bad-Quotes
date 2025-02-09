@@ -21,7 +21,7 @@ struct BBQuotesApp: App {
  Version2. Feature List:
  - Add El Camino tab ->  Done
  - Utilize all character images (CharacterView) -> Done
- - auto-scroll after status is shown
+ - auto-scroll after status is shown -> Done
  - Fetch episode data
  - Extend String to handle long images/color names
  - Static constants for show names
