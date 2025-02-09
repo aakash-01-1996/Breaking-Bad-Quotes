@@ -19,6 +19,11 @@ struct ContentView: View {
                 QuoteView(show: "Better Call Saul")
                     .toolbarBackgroundVisibility(.visible, for: .tabBar)
             }
+            
+            Tab("El Camino", systemImage: "car") {
+                QuoteView(show: "El Camino")
+                    .toolbarBackgroundVisibility(.visible, for: .tabBar)
+            }
         }
         .preferredColorScheme(.dark)
     }
