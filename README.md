@@ -1,11 +1,11 @@
 # Breaking Bad Quotes / Say my name
 
 
-- iOS app that fetches random quotes from the show Breaking Bad along with a random episode number.
-- Users can generate new quotes and episode details with a simple tap of a button
+- iOS app that fetches random quotes from the show Breaking Bad along with random episode details.
+- Users can generate new quotes and episode details with a simple tap of a button.
 
 # Live Link
-
+[iOS App: Say-my-name](https://youtube.com/shorts/daVnxGGPrpI?feature=share)
 
 # Features 
 Version1. Feature list:
