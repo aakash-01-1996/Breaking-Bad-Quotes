@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		070101842D532D7600967496 /* BBQuotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BBQuotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		070101842D532D7600967496 /* BBQuotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = BBQuotes.app; path = "/Users/aakash/Developer/XCode/BBQuotes/BBQuotes/build/Debug-iphoneos/BBQuotes.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -33,16 +33,7 @@
 			isa = PBXGroup;
 			children = (
 				070101862D532D7600967496 /* BBQuotes */,
-				070101852D532D7600967496 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		070101852D532D7600967496 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				070101842D532D7600967496 /* BBQuotes.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,7 +86,7 @@
 			mainGroup = 0701017B2D532D7600967496;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 070101852D532D7600967496 /* Products */;
+			productRefGroup = 0701017B2D532D7600967496;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (

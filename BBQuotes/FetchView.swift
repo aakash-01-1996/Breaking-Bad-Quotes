@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct QuoteView: View {
+struct FetchView: View {
     var vm = ViewModel()
     let show: String
     
@@ -31,7 +31,7 @@ struct QuoteView: View {
                         case .fetching:
                             ProgressView()
                             
-                        case .success:
+                        case .successQuote:
                             Text("\"\(vm.quote.quote)\"")
                                 .minimumScaleFactor(0.5)
                                 .multilineTextAlignment(.center)
@@ -40,7 +40,8 @@ struct QuoteView: View {
                                 .background(.black.opacity(0.5))
                                 .clipShape(.rect(cornerRadius: 25))
                                 .padding(.horizontal)
-                            
+                                                    
+                        
                             ZStack (alignment: .bottom) {
                                 AsyncImage(url: vm.character.images[0]) { image in
                                     image
@@ -62,26 +63,49 @@ struct QuoteView: View {
                             .onTapGesture {
                                 showCharacterInfo.toggle()
                             }
+                        
+                        case .successEpisode:
+                            EpisodeView(episode: vm.episode)
+                            
                             
                         case .failed(let error):
                             Text(error.localizedDescription)
                         }
-                        Spacer()
+                        Spacer(minLength: 20)
                     }
                     
-                    Button {
-                        Task {
-                            await vm.getData(forShow: show)
+                    HStack {
+                        Button {
+                            Task {
+                                await vm.getQuoteData(forShow: show)
+                            }
+                        } label: {
+                            Text("Get Random Quote")
+                                .font(.title3)
+                                .foregroundStyle(.white)
+                                .padding()
+                                .background(Color("\(show.removeSpaces())Button"))
+                                .clipShape(.rect(cornerRadius: 9))
+                                .shadow(color: Color("\(show.removeSpaces())Shadow") ,radius:2)
                         }
-                    } label: {
-                        Text("Get Random Quote")
-                            .font(.title2)
-                            .foregroundStyle(.white)
-                            .padding()
-                            .background(Color("\(show.removeSpaces())Button"))
-                            .clipShape(.rect(cornerRadius: 9))
-                            .shadow(color: Color("\(show.removeSpaces())Shadow") ,radius:2)
+                        Spacer()
+                        
+                        Button {
+                            Task {
+                                await vm.getEpisode(for: show)
+                            }
+                        } label: {
+                            Text("Get Random Episode")
+                                .font(.title3)
+                                .foregroundStyle(.white)
+                                .padding()
+                                .background(Color("\(show.removeSpaces())Button"))
+                                .clipShape(.rect(cornerRadius: 9))
+                                .shadow(color: Color("\(show.removeSpaces())Shadow") ,radius:2)
+                        }
                     }
+                    .padding(.horizontal, 35)
+                    
                     Spacer(minLength: 95)
                 }
                 .frame(width: geo.size.width, height: geo.size.height)
@@ -98,6 +122,6 @@ struct QuoteView: View {
 
 
 #Preview {
-    QuoteView(show: Constants.bcsName)
+    FetchView(show: Constants.bcsName)
         .preferredColorScheme(.dark)
 }
