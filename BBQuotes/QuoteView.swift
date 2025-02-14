@@ -71,7 +71,7 @@ struct QuoteView: View {
                     
                     Button {
                         Task {
-                            await vm.getData(forShow: show)
+                            await vm.getQuoteData(forShow: show)
                         }
                     } label: {
                         Text("Get Random Quote")
