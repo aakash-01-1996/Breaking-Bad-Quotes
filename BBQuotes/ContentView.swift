@@ -11,15 +11,15 @@ struct ContentView: View {
     var body: some View {
         TabView {
             Tab(Constants.bbName , systemImage: Constants.bbSysImage) {
-                QuoteView(show: Constants.bbName)
+                FetchView(show: Constants.bbName)
             }
             
             Tab(Constants.bcsName, systemImage: Constants.bcsSysImage ) {
-                QuoteView(show: Constants.bcsName)
+                FetchView(show: Constants.bcsName)
             }
             
             Tab(Constants.ecName, systemImage: Constants.ecSysImage) {
-                QuoteView(show: Constants.ecName)
+                FetchView(show: Constants.ecName)
             }
         }
         .preferredColorScheme(.dark)
