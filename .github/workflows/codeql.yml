@@ -12,4 +12,4 @@ jobs:
 
     steps:
       - name: Check Code QL
-      - run: echo "No errors found"
+        run: echo "No errors found"
