@@ -1,4 +1,4 @@
-name: Code Analyze
+name: Code Analyze - SWift
 
 on:
   push:
