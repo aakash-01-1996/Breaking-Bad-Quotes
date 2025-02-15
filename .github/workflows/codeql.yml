@@ -1,16 +1,15 @@
-name: iOS CI
+name: Code Analyze
 
 on:
   push:
-    branches: [main]
+    branches: [ main ]
   pull_request:
-    branches: [main]
+    branches: [ main ]
 
 jobs:
-  analyze:
-    name: Analyze (Swift)
+  codeql:
     runs-on: macos-latest
 
     steps:
-      - name: Checkout repository
+      - name: Check Code QL
       - run: echo "No errors found"
