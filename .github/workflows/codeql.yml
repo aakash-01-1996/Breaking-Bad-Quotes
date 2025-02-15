@@ -23,7 +23,6 @@ jobs:
       - name: Check syntax errors
         run: xcodebuild -workspace YourApp.xcworkspace -scheme YourApp -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 14,OS=16.4' clean build -dry-run
 
-jobs:
   analyze:
     name: Analyze (Swift)
     runs-on: macos-latest
